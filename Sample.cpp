@@ -14,7 +14,7 @@ int main(){
 
     Records record[5];
     int i, choice, counter = 0;
-	double max, min;
+    double max, min;
     
     while(1){
     		cout << "\n==============================================\n";
@@ -53,7 +53,7 @@ int main(){
 			cout << setw(10) <<"Nickname"
 			     << setw(17) << "Age"
 			     << setw(21) << "Score 1"
-				 << setw(21) << "Score 2\n";
+			     << setw(21) << "Score 2\n";
 			for(i=0; i<5; i++){
 			    cout << endl;
 			    cout << setw(10) << record[i].nickname
@@ -74,7 +74,7 @@ int main(){
 				record[i].average = round((record[i].score1 + record[i].score2) / 2);
 			    cout << endl;
 			    cout << setw(10) << record[i].nickname
-					 << setw(16) << record[i].average << endl;
+				 << setw(16) << record[i].average << endl;
 			}
 			cout << "\n\nPress any key to return....";
 			system("pause>0");
@@ -95,7 +95,7 @@ int main(){
 			for(i = 0; i < 5; i++){
 				if(max == record[i].average){
 					cout << setw(10) << record[counter].nickname
-			     		 << setw(15) << max << endl;
+			     		     << setw(15) << max << endl;
 				}
 				counter++;
 			}
@@ -118,7 +118,7 @@ int main(){
 			for(i = 0; i < 5; i++){
 				if(min == record[i].average){
 					cout << setw(10) << record[counter].nickname
-			     		 << setw(15) << min << endl;
+			     		     << setw(15) << min << endl;
 				}
 				counter++;
 			}
