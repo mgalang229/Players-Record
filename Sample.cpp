@@ -7,7 +7,7 @@ using namespace std;
 struct Records{
 	char nickname[50];
 	int age;
-    double score1, score2, average;
+    	double score1, score2, average;
 };
 
 int main(){
